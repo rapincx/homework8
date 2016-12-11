@@ -1,0 +1,35 @@
+footer.row.expanded.align-middle
+    .column
+        .row
+            .medium-3.columns
+                span Copyritht 2014, STRICT
+            .medium-9.columns.text-right
+                .soc-img
+                    a(href="http://facebook.com")
+                        i.fa.fa-facebook(aria-hidden="true")
+                .soc-img
+                    a(href="http://twitter.com")
+                        i.fa.fa-twitter(aria-hidden="true")
+                .soc-img
+                    a(href="http://plus.google.com")
+                        i.fa.fa-google-plus(aria-hidden="true")
+                .soc-img
+                    a(href="http://linkedin.com")
+                        i.fa.fa-linkedin(aria-hidden="true")
+
+script(src="https://code.jquery.com/jquery-2.2.4.min.js"
+integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+crossorigin="anonymous")
+script(type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js")
+script(type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5")
+script(type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5")
+script(type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6")
+script(type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7")
+script(type='text/javascript').
+    $(document).ready(function () {
+        $(".fancybox").fancybox();
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1200);
+        });
+    });
