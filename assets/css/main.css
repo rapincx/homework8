@@ -1,0 +1,302 @@
+h2 {
+    color : #2d3950;
+    font  : 400 40px "Lato";
+}
+
+h2.white {
+    color : #ffffff
+}
+
+p.text {
+    color : #999999;
+    font  : 400 20px "Lato"
+}
+
+p.header-desc.white {
+    color : #ffffff
+}
+
+.white {
+    color : #ffffff
+}
+
+@media screen and (min-width : 320px) {
+    header {
+        position : relative;
+        height   : 100vh;
+    }
+
+    header a.arrow-down {
+        position : absolute;
+        bottom   : 91px;
+        left     : calc(50% - 17.5px);
+    }
+
+    header a.arrow-down i.fa {
+        color : #ffffff;
+        font  : 400 35px "FontAwesome"
+    }
+
+    header h1 {
+        font           : 700 30px "Lato";
+        text-transform : uppercase;
+    }
+
+    header h1 img {
+        margin-right : 16px
+    }
+
+    header h1 a {
+        color : #2d3950
+    }
+
+    header .header-top {
+        background : #ffffff;
+        min-height : 99px;
+        font       : 700 30px/20px "Lato"
+    }
+
+    header .header-main {
+        background      : url("../img/header.png") no-repeat;
+        background-size : cover;
+        height          : calc(100vh - 99px)
+    }
+
+    header h1.main {
+        display       : inline-block;
+        color         : #ffffff;
+        font          : 700 120px "Lato";
+        border-bottom : 2px solid #15a4fa;
+        padding       : 34px 92px
+    }
+
+    header p.header-desc {
+        color      : #ffffff;
+        font       : 400 20px "Lato";
+        margin-top : 40px
+    }
+
+    header a.btn-action {
+        display       : inline-block;
+        color         : #ffffff;
+        font          : 400 18px "Lato";
+        border        : 1px solid #15a4fa;
+        border-radius : 2px;
+        padding       : 22px 36px;
+        margin-top    : 64px;
+    }
+
+    header a.btn-action:hover {
+        background : #15a4fa
+    }
+}
+
+@media screen and (min-width : 320px) {
+    section#design {
+        background : #f6f9f9;
+        padding    : 81px 0 110px 0
+    }
+
+    .design-list {
+        background : #ffffff;
+        padding    : 65px 0 65px 0;
+    }
+
+    .design-list .design-item {
+        padding : 0 35px;
+    }
+
+    .design-list .design-item .design-img {
+        height     : 100px;
+        width      : 100px;
+        background : -webkit-linear-gradient(left, #48baff, #48baff 50%, #5fc3ff 50%, #5fc3ff);
+        background : linear-gradient(to right, #48baff, #48baff 50%, #5fc3ff 50%, #5fc3ff);
+        margin     : auto;
+    }
+
+    .design-list .design-item .design-img .fa {
+        text-shadow : .8px .6px 1px rgba(2, 2, 2, 0.4);
+        color       : #ffffff;
+        font        : 400 42px/100px "FontAwesome"
+    }
+
+    .design-list .design-item .design-header {
+        color  : #2d3950;
+        font   : 400 22px "Lato";
+        margin : 33px auto 26px
+    }
+
+    .design-list .design-item .design-desc {
+        color : #999999;
+        font  : 400 15px "Lato"
+    }
+}
+
+@media screen and (min-width : 320px) {
+    section#showcase {
+        background  : #f6f9f9;
+        padding-top : 81px;
+    }
+
+    section#showcase h2 {
+        margin-bottom : 22px
+    }
+
+    section#showcase .header-desc {
+        color       : #909090;
+        font-family : 400 15px "Lato"
+    }
+
+    .showcase-list {
+        background : #f6f9f9;
+        padding    : 80px 0 116px 0
+    }
+
+    .showcase-item {
+        position      : relative;
+        min-width     : 360px;
+        min-height    : 260px;
+        margin-bottom : 30px;
+        overflow      : hidden;
+        text-align    : center;
+    }
+
+    .showcase-item img {
+        width          : 100%;
+        vertical-align : top
+    }
+
+    .showcase-item .overlay {
+        position           : absolute;
+        width              : 100%;
+        height             : 100%;
+        top                : 0;
+        left               : 0;
+        background         : rgba(21, 164, 250, 0.9);
+        opacity            : 0;
+        transition         : all 1s;
+        -webkit-transition : all 1s;
+    }
+
+    .showcase-item .overlay a {
+        display       : inline-block;
+        border        : 1px solid #ffffff;
+        text-align    : center;
+        border-radius : 2px;
+        z-index       : 1000;
+        width         : 42px;
+        height        : 42px;
+    }
+
+    .showcase-item .overlay a:first-child {
+        margin-right : 10px
+    }
+
+    .showcase-item .overlay a i.fa {
+        color : #ffffff;
+        font  : 400 15px/42px "FontAwesome"
+    }
+
+    .showcase-item:hover .overlay {
+        opacity : 1
+    }
+}
+
+@media screen and (min-width : 320px) {
+    #contact-us {
+        background      : url("../img/contact-us.png") no-repeat;
+        background-size : cover;
+        padding         : 74px 0 110px 0;
+    }
+
+    #contact-us h2 {
+        margin-top : 21px
+    }
+
+    #contact-us form {
+        margin-top : 51px
+    }
+
+    #contact-us input, #contact-us textarea {
+        color         : #ffffff;
+        width         : 100%;
+        border        : 1px solid #999999;
+        border-radius : 2px;
+        outline       : 0;
+        background    : transparent;
+        margin-bottom : 20px
+    }
+
+    #contact-us textarea {
+        padding : 26px 21px
+    }
+
+    #contact-us input {
+        padding : 26px 21px;
+    }
+
+    #contact-us input.checkbox {
+        width  : 17px;
+        height : 17px
+    }
+
+    #contact-us label {
+        vertical-align : top
+    }
+
+    #contact-us .right-btn {
+        float : right
+    }
+
+    #contact-us .left-btn {
+        display    : inline-block;
+        margin-top : 18px
+    }
+
+    #contact-us button[type="submit"] {
+        color         : #ffffff;
+        font-family   : 400 18px "Lato";
+        padding       : 17px 51px;
+        border        : 1px solid #15a4fa;
+        border-radius : 2px;
+    }
+
+    #contact-us button[type="submit"]:hover {
+        background : #15a4fa
+    }
+}
+
+footer {
+    min-height : 90px;
+}
+
+footer span {
+    color : #999999;
+    font  : 400 15px/40px "Lato"
+}
+
+footer .soc-img {
+    display            : inline-block;
+    width              : 40px;
+    height             : 40px;
+    background-color   : #15a4fa;
+    border-radius      : 2px;
+    text-align         : center;
+    -webkit-transition : background-color .25s;
+    transition         : background-color .25s;
+}
+
+footer .soc-img:hover {
+    background-color : #ffffff
+}
+
+footer .soc-img:hover i.fa {
+    color : #15a4fa
+}
+
+footer .soc-img i.fa {
+    color              : #ffffff;
+    font               : 400 15px/40px "FontAwesome";
+    -webkit-transition : color .25s;
+    transition         : color .25s
+}
